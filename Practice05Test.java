@@ -29,7 +29,7 @@ public class Practice05Test {
 	
 	/**
 	 * Constructor which sets the size of the array
-	 * @param arraySize
+	 * @param arraySize the size of the array
 	 */
 	public Practice05Test(int arraySize) {
 		populationStrategy = "random";
@@ -40,8 +40,8 @@ public class Practice05Test {
 	
 	/**
 	 * Constructor which sets array size AND uses one of two strategies for populating the array.
-	 * @param arraySize
-	 * @param populationStrategy
+	 * @param arraySize the size of the array
+	 * @param populationStrategy the strategy of the population
 	 */
 	public Practice05Test(int arraySize, String populationStrategy) {
 		this.populationStrategy = populationStrategy;
@@ -52,7 +52,7 @@ public class Practice05Test {
 	
 	/**
 	 * Sets the array and populates it according to the population strategy.
-	 * @param size
+	 * @param size the size that the future array will be
 	 */
 	protected void createNewArray(int size) {
 		arr = new int[size];
@@ -62,7 +62,7 @@ public class Practice05Test {
 	
 	/**
 	 * Changes the size of the array.
-	 * @param newSize
+	 * @param newSize the size of a new array
 	 */
 	public void changeArraySize(int newSize) {
 		createNewArray(newSize);
@@ -133,7 +133,7 @@ public class Practice05Test {
 	
 	/**
 	 * Prints the array size and whether sorted or not.
-	 * @param The array to be considered.
+	 * @param arr the array to be considered.
 	 */
 	public void printStatus(int [] arr) {
 		System.out.print(arr.length + "\t");
@@ -193,7 +193,7 @@ public class Practice05Test {
 	
 	/**
 	 * main: try 10 different array sizes; make
-	 * @param args
+	 * @param args the string arrays from command line
 	 */
 	public static void main(String[] args) {
 		
