@@ -22,6 +22,7 @@ public class InsertionSort implements SortingAlgorithm {
                 // if the previous value is greater than the temp/current value, switch
                 myArray[index] = myArray[index - 1];
                 prevIndex --; // keep going back
+                index --;
             }
             myArray[prevIndex + 1] = minValue; // update where the temp/minValue is
         }

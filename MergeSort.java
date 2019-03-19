@@ -55,7 +55,7 @@ public class MergeSort implements SortingAlgorithm {
     }
 
     /**
-     * Merges an array
+     * Merges 2 arrays into one big array
      * @param myArray the given original array
      * @param left the left half of an array to be merged to original array
      * @param right the right half of an array to be merged to original array
